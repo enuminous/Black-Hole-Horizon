@@ -1,0 +1,76 @@
+test_common_entropy_factor_cancels (test_model.HorizonTests.test_common_entropy_factor_cancels) ... ok
+test_constant_q_deformation (test_model.HorizonTests.test_constant_q_deformation) ... ok
+test_eta_sign_threshold (test_model.HorizonTests.test_eta_sign_threshold) ... ok
+test_extremal (test_model.HorizonTests.test_extremal) ... ok
+test_forward_inverse (test_model.HorizonTests.test_forward_inverse) ... ok
+test_invalid_area (test_model.HorizonTests.test_invalid_area) ... ok
+test_mass_scaling (test_model.HorizonTests.test_mass_scaling) ... ok
+test_noiseless_single_mode (test_model.HorizonTests.test_noiseless_single_mode) ... ok
+test_noiseless_two_modes (test_model.HorizonTests.test_noiseless_two_modes) ... ok
+test_physical_domain_not_clipped (test_model.HorizonTests.test_physical_domain_not_clipped) ... ok
+test_redshift_cancellation (test_model.HorizonTests.test_redshift_cancellation) ... ok
+test_schwarzschild (test_model.HorizonTests.test_schwarzschild) ... ok
+test_spin_sign (test_model.HorizonTests.test_spin_sign) ... ok
+test_wilson_zero_not_certainty (test_model.HorizonTests.test_wilson_zero_not_certainty) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.046s
+
+OK
+[
+  {
+    "name": "Numerical identity and noiseless recovery tests",
+    "status": "PASS",
+    "detail": "14/14 checks"
+  },
+  {
+    "name": "Frozen protocol hash",
+    "status": "PASS",
+    "detail": "e0990c3794f8073493b68843f5449517e3633fd2bfa3dd1287e8b3f307a67e46"
+  },
+  {
+    "name": "Published 4.4 reference reproduced",
+    "status": "PASS",
+    "detail": "z=4.447211293041; frozen tolerance 0.15"
+  },
+  {
+    "name": "Cached inputs reproduce stored statistic",
+    "status": "PASS",
+    "detail": "Independent cache read; same statistic, not independent astrophysical evidence"
+  },
+  {
+    "name": "Released mass/spin/area consistency",
+    "status": "PASS",
+    "detail": "Kerr formula matches supplied area values"
+  },
+  {
+    "name": "Exact empirical pair count",
+    "status": "PASS",
+    "detail": "2831 negative pairs; pairs reuse samples"
+  },
+  {
+    "name": "Trial accounting",
+    "status": "PASS",
+    "detail": "16 cases \u00d7 200; invalid fits retained"
+  },
+  {
+    "name": "90% coverage: scale_R1.5_s1",
+    "status": "PASS",
+    "detail": "178/200; Wilson95 [0.8391,0.9262]"
+  },
+  {
+    "name": "90% coverage: scale_R1.02_s1",
+    "status": "PASS",
+    "detail": "181/200; Wilson95 [0.8564,0.9383]"
+  },
+  {
+    "name": "90% coverage: overtone_two_t0ms",
+    "status": "FAIL",
+    "detail": "156/199; Wilson95 [0.7216,0.8354]"
+  },
+  {
+    "name": "EFMW-specific waveform and observational bound",
+    "status": "UNRESOLVED",
+    "detail": "No regular C1 black-hole solution, perturbation spectrum or likelihood mapping supplied"
+  }
+]

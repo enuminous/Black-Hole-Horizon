@@ -1,0 +1,17 @@
+scale_R1.5_s0.8 valid 200 median R 2.343722533937662 coverage 0.0
+scale_R1.5_s0.9 valid 200 median R 1.855174381961503 coverage 0.085
+scale_R1.5_s1 valid 200 median R 1.4931097442906762 coverage 0.89
+scale_R1.5_s1.1 valid 200 median R 1.2388895785303724 coverage 0.065
+scale_R1.5_s1.2 valid 200 median R 1.0483876720380598 coverage 0.0
+scale_R1.5_s1.3 valid 200 median R 0.8874813422004066 coverage 0.0
+scale_R1.02_s0.8 valid 200 median R 1.5931337601130546 coverage 0.0
+scale_R1.02_s0.9 valid 200 median R 1.262861105462559 coverage 0.06
+scale_R1.02_s1 valid 200 median R 1.0221882521526933 coverage 0.905
+scale_R1.02_s1.1 valid 200 median R 0.8407586165259407 coverage 0.04
+scale_R1.02_s1.2 valid 200 median R 0.7094706455449038 coverage 0.0
+scale_R1.02_s1.3 valid 200 median R 0.5982424285049709 coverage 0.0
+overtone_single_t0ms valid 166 median R 1.096202085064517 coverage 0.012048192771084338
+overtone_single_t5ms valid 184 median R 1.5418658020003022 coverage 0.8858695652173914
+overtone_single_t10ms valid 86 median R 1.7473575659402532 coverage 0.5813953488372093
+overtone_two_t0ms valid 199 median R 1.4837184348187145 coverage 0.7839195979899497
+elapsed 38.152567863464355

@@ -1,0 +1,19 @@
+test_common_entropy_factor_cancels (test_model.HorizonTests.test_common_entropy_factor_cancels) ... ok
+test_constant_q_deformation (test_model.HorizonTests.test_constant_q_deformation) ... ok
+test_eta_sign_threshold (test_model.HorizonTests.test_eta_sign_threshold) ... ok
+test_extremal (test_model.HorizonTests.test_extremal) ... ok
+test_forward_inverse (test_model.HorizonTests.test_forward_inverse) ... ok
+test_invalid_area (test_model.HorizonTests.test_invalid_area) ... ok
+test_mass_scaling (test_model.HorizonTests.test_mass_scaling) ... ok
+test_noiseless_single_mode (test_model.HorizonTests.test_noiseless_single_mode) ... ok
+test_noiseless_two_modes (test_model.HorizonTests.test_noiseless_two_modes) ... ok
+test_physical_domain_not_clipped (test_model.HorizonTests.test_physical_domain_not_clipped) ... ok
+test_redshift_cancellation (test_model.HorizonTests.test_redshift_cancellation) ... ok
+test_schwarzschild (test_model.HorizonTests.test_schwarzschild) ... ok
+test_spin_sign (test_model.HorizonTests.test_spin_sign) ... ok
+test_wilson_zero_not_certainty (test_model.HorizonTests.test_wilson_zero_not_certainty) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.040s
+
+OK

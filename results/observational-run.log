@@ -1,0 +1,28 @@
+{
+  "pre_cut_total_mass_times": -40.0,
+  "post_start_remnant_mass_times": 10.5,
+  "pre_samples": 8175,
+  "post_samples": 4000,
+  "post_each_code": 2000,
+  "pair_count": 32700000,
+  "z": 4.447211293041233,
+  "ratio_median": 1.726589958328078,
+  "ratio90": [
+    1.4148630445928967,
+    2.159496587693241
+  ],
+  "fractional_growth_median": 0.7265899583280779,
+  "fractional_growth90": [
+    0.4148630445928967,
+    1.159496587693241
+  ],
+  "empirical_positive_fraction": 0.9999134250764526,
+  "negative_pairs": 2831,
+  "initial_area_median_km2": 281992.85473685403,
+  "final_area_median_km2": 485124.096609332,
+  "eta_median_crossing": 0.5791763094512247,
+  "eta_positive90_threshold": 0.7067821891466063,
+  "eta_negative90_threshold": 0.4630708868441385,
+  "pooling_seed": 250114
+}
+codes {'ringdown_only': 4.312877098093585, 'pyring_only': 4.697381393248944, 'pooled': 4.447211293041233} area closure 6.661338147750939e-16

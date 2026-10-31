@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Numerical identity and noiseless recovery tests",
+    "status": "PASS",
+    "detail": "14/14 checks"
+  },
+  {
+    "name": "Frozen protocol hash",
+    "status": "PASS",
+    "detail": "e0990c3794f8073493b68843f5449517e3633fd2bfa3dd1287e8b3f307a67e46"
+  },
+  {
+    "name": "Published 4.4 reference reproduced",
+    "status": "PASS",
+    "detail": "z=4.447211293041; frozen tolerance 0.15"
+  },
+  {
+    "name": "Cached inputs reproduce stored statistic",
+    "status": "PASS",
+    "detail": "Independent cache read; same statistic, not independent astrophysical evidence"
+  },
+  {
+    "name": "Released mass/spin/area consistency",
+    "status": "PASS",
+    "detail": "Kerr formula matches supplied area values"
+  },
+  {
+    "name": "Exact empirical pair count",
+    "status": "PASS",
+    "detail": "2831 negative pairs; pairs reuse samples"
+  },
+  {
+    "name": "Trial accounting",
+    "status": "PASS",
+    "detail": "16 cases \u00d7 200; invalid fits retained"
+  },
+  {
+    "name": "90% coverage: scale_R1.5_s1",
+    "status": "PASS",
+    "detail": "178/200; Wilson95 [0.8391,0.9262]"
+  },
+  {
+    "name": "90% coverage: scale_R1.02_s1",
+    "status": "PASS",
+    "detail": "181/200; Wilson95 [0.8564,0.9383]"
+  },
+  {
+    "name": "90% coverage: overtone_two_t0ms",
+    "status": "FAIL",
+    "detail": "156/199; Wilson95 [0.7216,0.8354]"
+  },
+  {
+    "name": "EFMW-specific waveform and observational bound",
+    "status": "UNRESOLVED",
+    "detail": "No regular C1 black-hole solution, perturbation spectrum or likelihood mapping supplied"
+  }
+]

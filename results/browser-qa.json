@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-31",
+  "method": "Sites managed preview and CUA browser interactions",
+  "checks": [
+    "Standalone lab rendered with embedded reference statistic",
+    "Frequency-scale slider at 1.3 produced -11.2% inferred growth from +50% stipulated true growth",
+    "Injection tab displayed all 16 cases",
+    "Selecting overtone_two_t0ms displayed 199 valid fits and 78.4% coverage",
+    "Evidence tab displayed numerical PASS, calibration FAIL and EFMW UNRESOLVED",
+    "Desktop visual inspection: controls, plot legends and text readable"
+  ],
+  "limits": [
+    "Responsive CSS implemented; separate mobile viewport not inspected",
+    "Download controls statically checked; downloaded payload not browser-inspected",
+    "Browser-extension metadata errors observed; no application-origin error observed in inspected log entries",
+    "GitHub Pages deployment not activated by this QA"
+  ]
+}

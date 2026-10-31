@@ -1,0 +1,720 @@
+{
+  "study": "EFMW-BH-AREA-003",
+  "seed": 20261031,
+  "kind": "synthetic injection/recovery, not LIGO data",
+  "mass_detector_msun": 68,
+  "spin": 0.68,
+  "frequency_hz": 250.25849762621056,
+  "damping_seconds": 0.0040766130305583724,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "cases": [
+    {
+      "case": "scale_R1.5_s0.8",
+      "true_ratio": 1.5,
+      "scale": 0.8,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 2.343722533937662,
+      "median_area_relative_bias": 0.5624816892917748,
+      "median_residual_p": 0.5959080188215178,
+      "expected_noiseless_ratio": 2.3437499999999996,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.5_s0.9",
+      "true_ratio": 1.5,
+      "scale": 0.9,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.855174381961503,
+      "median_area_relative_bias": 0.23678292130766865,
+      "median_residual_p": 0.48903052378881023,
+      "expected_noiseless_ratio": 1.8518518518518516,
+      "coverage": {
+        "count": 17,
+        "denominator": 200,
+        "fraction": 0.085,
+        "wilson95": [
+          0.05374575017747561,
+          0.13189587071565567
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.5_s1",
+      "true_ratio": 1.5,
+      "scale": 1.0,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.4931097442906762,
+      "median_area_relative_bias": -0.004593503806215926,
+      "median_residual_p": 0.5315760748388361,
+      "expected_noiseless_ratio": 1.5,
+      "coverage": {
+        "count": 178,
+        "denominator": 200,
+        "fraction": 0.89,
+        "wilson95": [
+          0.839073090026985,
+          0.926227555398747
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.5_s1.1",
+      "true_ratio": 1.5,
+      "scale": 1.1,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 29.999999999999996,
+      "median_inferred_ratio": 1.2388895785303724,
+      "median_area_relative_bias": -0.17407361431308505,
+      "median_residual_p": 0.5453791276576254,
+      "expected_noiseless_ratio": 1.2396694214876032,
+      "coverage": {
+        "count": 13,
+        "denominator": 200,
+        "fraction": 0.065,
+        "wilson95": [
+          0.03837635464915299,
+          0.10801907929906895
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.5_s1.2",
+      "true_ratio": 1.5,
+      "scale": 1.2,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.0483876720380598,
+      "median_area_relative_bias": -0.30107488530796006,
+      "median_residual_p": 0.49549762525200425,
+      "expected_noiseless_ratio": 1.0416666666666667,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 48,
+        "denominator": 200,
+        "fraction": 0.24,
+        "wilson95": [
+          0.1860661599241369,
+          0.30373340979204166
+        ]
+      },
+      "significant_decrease": {
+        "count": 1,
+        "denominator": 200,
+        "fraction": 0.005,
+        "wilson95": [
+          0.0008831687156009814,
+          0.02777370439789293
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.5_s1.3",
+      "true_ratio": 1.5,
+      "scale": 1.3,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.0,
+      "median_inferred_ratio": 0.8874813422004066,
+      "median_area_relative_bias": -0.4083457718663956,
+      "median_residual_p": 0.503215399812599,
+      "expected_noiseless_ratio": 0.8875739644970413,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 198,
+        "denominator": 200,
+        "fraction": 0.99,
+        "wilson95": [
+          0.9642782382838231,
+          0.9972533418664555
+        ]
+      },
+      "significant_decrease": {
+        "count": 122,
+        "denominator": 200,
+        "fraction": 0.61,
+        "wilson95": [
+          0.5409374595716976,
+          0.6749165686253038
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s0.8",
+      "true_ratio": 1.02,
+      "scale": 0.8,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.5931337601130546,
+      "median_area_relative_bias": 0.5618958432480928,
+      "median_residual_p": 0.503213390099249,
+      "expected_noiseless_ratio": 1.5937499999999998,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s0.9",
+      "true_ratio": 1.02,
+      "scale": 0.9,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.262861105462559,
+      "median_area_relative_bias": 0.2380991230025088,
+      "median_residual_p": 0.48172240426989293,
+      "expected_noiseless_ratio": 1.2592592592592593,
+      "coverage": {
+        "count": 12,
+        "denominator": 200,
+        "fraction": 0.06,
+        "wilson95": [
+          0.03465219425433187,
+          0.1019316929576627
+        ]
+      },
+      "decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s1",
+      "true_ratio": 1.02,
+      "scale": 1.0,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 1.0221882521526933,
+      "median_area_relative_bias": 0.0021453452477385726,
+      "median_residual_p": 0.4932578131835912,
+      "expected_noiseless_ratio": 1.02,
+      "coverage": {
+        "count": 181,
+        "denominator": 200,
+        "fraction": 0.905,
+        "wilson95": [
+          0.8563983883518006,
+          0.9383368972826135
+        ]
+      },
+      "decrease": {
+        "count": 75,
+        "denominator": 200,
+        "fraction": 0.375,
+        "wilson95": [
+          0.31085436858409826,
+          0.44385696301021843
+        ]
+      },
+      "significant_decrease": {
+        "count": 4,
+        "denominator": 200,
+        "fraction": 0.02,
+        "wilson95": [
+          0.0078044264163494685,
+          0.050287086905826436
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s1.1",
+      "true_ratio": 1.02,
+      "scale": 1.1,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 29.999999999999996,
+      "median_inferred_ratio": 0.8407586165259407,
+      "median_area_relative_bias": -0.17572684654319537,
+      "median_residual_p": 0.5640334529625417,
+      "expected_noiseless_ratio": 0.8429752066115701,
+      "coverage": {
+        "count": 8,
+        "denominator": 200,
+        "fraction": 0.04,
+        "wilson95": [
+          0.020405632066152306,
+          0.07693206820093293
+        ]
+      },
+      "decrease": {
+        "count": 200,
+        "denominator": 200,
+        "fraction": 1.0,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "significant_decrease": {
+        "count": 182,
+        "denominator": 200,
+        "fraction": 0.91,
+        "wilson95": [
+          0.8622342812328346,
+          0.9423125511378069
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s1.2",
+      "true_ratio": 1.02,
+      "scale": 1.2,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.000000000000004,
+      "median_inferred_ratio": 0.7094706455449038,
+      "median_area_relative_bias": -0.3044405435834277,
+      "median_residual_p": 0.5099028860274062,
+      "expected_noiseless_ratio": 0.7083333333333334,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 200,
+        "denominator": 200,
+        "fraction": 1.0,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "significant_decrease": {
+        "count": 200,
+        "denominator": 200,
+        "fraction": 1.0,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      }
+    },
+    {
+      "case": "scale_R1.02_s1.3",
+      "true_ratio": 1.02,
+      "scale": 1.3,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 200,
+      "invalid": 0,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 30.0,
+      "median_inferred_ratio": 0.5982424285049709,
+      "median_area_relative_bias": -0.41348781519120503,
+      "median_residual_p": 0.4845154386349271,
+      "expected_noiseless_ratio": 0.6035502958579881,
+      "coverage": {
+        "count": 0,
+        "denominator": 200,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.018845326377266575
+        ]
+      },
+      "decrease": {
+        "count": 200,
+        "denominator": 200,
+        "fraction": 1.0,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "significant_decrease": {
+        "count": 200,
+        "denominator": 200,
+        "fraction": 1.0,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      }
+    },
+    {
+      "case": "overtone_single_t0ms",
+      "true_ratio": 1.5,
+      "scale": 1.0,
+      "start_ms": 0.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 166,
+      "invalid": 34,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 38.57923132086743,
+      "median_inferred_ratio": 1.096202085064517,
+      "median_area_relative_bias": -0.2691986099569887,
+      "median_residual_p": 0.3905919253110056,
+      "expected_noiseless_ratio": 1.5,
+      "coverage": {
+        "count": 2,
+        "denominator": 166,
+        "fraction": 0.012048192771084338,
+        "wilson95": [
+          0.0033102913258154093,
+          0.04285899428408123
+        ]
+      },
+      "decrease": {
+        "count": 30,
+        "denominator": 166,
+        "fraction": 0.18072289156626506,
+        "wilson95": [
+          0.12962614302362152,
+          0.24626240188161946
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 166,
+        "fraction": 0.0,
+        "wilson95": [
+          1.734723475976807e-18,
+          0.02261790994594346
+        ]
+      }
+    },
+    {
+      "case": "overtone_single_t5ms",
+      "true_ratio": 1.5,
+      "scale": 1.0,
+      "start_ms": 5.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 184,
+      "invalid": 16,
+      "optimizer_failures": 0,
+      "boundary_fits": 0,
+      "retained_snr": 8.43209849247629,
+      "median_inferred_ratio": 1.5418658020003022,
+      "median_area_relative_bias": 0.027910534666868103,
+      "median_residual_p": 0.46778164414065326,
+      "expected_noiseless_ratio": 1.5,
+      "coverage": {
+        "count": 163,
+        "denominator": 184,
+        "fraction": 0.8858695652173914,
+        "wilson95": [
+          0.8318273045391444,
+          0.9241293457738595
+        ]
+      },
+      "decrease": {
+        "count": 7,
+        "denominator": 184,
+        "fraction": 0.03804347826086957,
+        "wilson95": [
+          0.0185483447107941,
+          0.07643313026659554
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 184,
+        "fraction": 0.0,
+        "wilson95": [
+          0.0,
+          0.02045053762258643
+        ]
+      }
+    },
+    {
+      "case": "overtone_single_t10ms",
+      "true_ratio": 1.5,
+      "scale": 1.0,
+      "start_ms": 10.0,
+      "two_modes": false,
+      "trials": 200,
+      "valid": 86,
+      "invalid": 114,
+      "optimizer_failures": 1,
+      "boundary_fits": 79,
+      "retained_snr": 2.571135896725299,
+      "median_inferred_ratio": 1.7473575659402532,
+      "median_area_relative_bias": 0.1649050439601688,
+      "median_residual_p": 0.48976570265681907,
+      "expected_noiseless_ratio": 1.5,
+      "coverage": {
+        "count": 50,
+        "denominator": 86,
+        "fraction": 0.5813953488372093,
+        "wilson95": [
+          0.4758445635760395,
+          0.6799854973309328
+        ]
+      },
+      "decrease": {
+        "count": 12,
+        "denominator": 86,
+        "fraction": 0.13953488372093023,
+        "wilson95": [
+          0.08165847155571476,
+          0.22823697299912266
+        ]
+      },
+      "significant_decrease": {
+        "count": 1,
+        "denominator": 86,
+        "fraction": 0.011627906976744186,
+        "wilson95": [
+          0.0020555686652495644,
+          0.06296406589291725
+        ]
+      }
+    },
+    {
+      "case": "overtone_two_t0ms",
+      "true_ratio": 1.5,
+      "scale": 1.0,
+      "start_ms": 0.0,
+      "two_modes": true,
+      "trials": 200,
+      "valid": 199,
+      "invalid": 1,
+      "optimizer_failures": 1,
+      "boundary_fits": 0,
+      "retained_snr": 38.57923132086743,
+      "median_inferred_ratio": 1.4837184348187145,
+      "median_area_relative_bias": -0.010854376787523656,
+      "median_residual_p": 0.5175959507809027,
+      "expected_noiseless_ratio": 1.5,
+      "coverage": {
+        "count": 156,
+        "denominator": 199,
+        "fraction": 0.7839195979899497,
+        "wilson95": [
+          0.7216493207759211,
+          0.8354360041718187
+        ]
+      },
+      "decrease": {
+        "count": 3,
+        "denominator": 199,
+        "fraction": 0.01507537688442211,
+        "wilson95": [
+          0.005140002903511805,
+          0.04337798192025977
+        ]
+      },
+      "significant_decrease": {
+        "count": 0,
+        "denominator": 199,
+        "fraction": 0.0,
+        "wilson95": [
+          0.0,
+          0.018938233056634942
+        ]
+      }
+    }
+  ]
+}
