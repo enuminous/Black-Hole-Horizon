@@ -5,3 +5,6 @@
 
 .mast nav{display:flex;gap:clamp(10px,2vw,25px);align-items:center;font: .8rem ui-monospace,monospace}.mast nav a:first-child{color:var(--blue)}
 @media(max-width:450px){.mast .brand{font-size:.73rem;gap:.4em}.mast nav{font-size:.69rem;gap:9px}}
+
+.switcher{flex-wrap:wrap}.density-key{align-items:center;display:flex;gap:8px}.density-key i{display:inline-block;height:7px;width:95px;border-radius:2px;background:linear-gradient(90deg,#000004,#420a68,#932667,#dd513a,#fca50a,#fcffa4)}.density-key small{font:inherit}.legend .density-key{flex-wrap:wrap}
+@media(max-width:530px){.switcher{gap:2px}.switcher button{padding:7px 8px;font-size:.78rem}}

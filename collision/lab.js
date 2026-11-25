@@ -2,11 +2,12 @@
 (() => {
   const orbit=window.BHOrbit, fields=window.BHFields, $=id=>document.getElementById(id);
   const amber='#ffab71', blue='#80d6e3', ivory='#e9eedf', muted='#a7b1b5';
-  const clocks={orbit:-160,field:12};
+  const clocks={orbit:-160,field:12,ns:0};
   let view='orbit',playing=false,stamp=0,lastPaint=0,animationId=0;
   const cache=new Map(), shell=document.createElement('canvas');
   const sepRows=orbit.tracks.A.map((a,i)=>[a[0],Math.hypot(...a.slice(1,4).map((v,k)=>v-orbit.tracks.B[i][k+1]))]);
-  function limits(){return view==='field'?[0,36]:$('window').value==='end'?[-260,50]:[orbit.tracks.A[0][0],orbit.tracks.C.at(-1)[0]]}
+  const ns=window.makeNeutronStarView({data:window.BHNSData,$,setup,line,label,read,repaint:()=>{if(view==='ns')draw();}});
+  function limits(){if(view==='ns')return [0,ns.last];return view==='field'?[0,36]:$('window').value==='end'?[-260,50]:[orbit.tracks.A[0][0],orbit.tracks.C.at(-1)[0]]}
   function sample(rows,t){
     if(t<rows[0][0] || t>rows.at(-1)[0])return null;
     let lo=0,hi=rows.length-1;
@@ -34,8 +35,15 @@
   function read(a,b,c){$('valueA').textContent=a;$('valueB').textContent=b;$('valueC').textContent=c}
   function settings(){
     const o=view==='orbit',arm=$('arm').value,pulse=arm.startsWith('pulse');
-    $('orbTab').setAttribute('aria-pressed',o);$('fieldTab').setAttribute('aria-pressed',!o);
-    $('orbitControls').hidden=!o;$('fieldControls').hidden=o;
+    const neutron=view==='ns';
+    $('nsTab').setAttribute('aria-pressed',neutron);
+    $('nsControls').hidden=!neutron;$('nsCSV').hidden=!neutron;$('scalarFiles').hidden=neutron;
+    $('timeUnit').textContent=neutron?'ms':'M';
+    $('scrub').step=neutron?'any':'.1';
+    $('orbTab').setAttribute('aria-pressed',o);$('fieldTab').setAttribute('aria-pressed',view==='field');
+    $('orbitControls').hidden=!o;$('fieldControls').hidden=view!=='field';
+    if(neutron) ns.settings();
+    else {
     $('viewTitle').textContent=o?'Orbital plane':'Scalar field cross-section';
     $('runid').textContent=o?'SXS:BBH:0305 · LEV 5':'C1 · HEAD-ON CLOSE LIMIT';
     $('scene').setAttribute('aria-label',o?'Projected horizon centers from the SXS numerical simulation':'Signed scalar field in a radial shell around a common horizon');
@@ -50,6 +58,7 @@
     $('caption').textContent=o?'3D coordinate distance between the individual horizon centers. Their joint record ends just after the first common horizon.':pulse?'Solid line: C1. Dashed line when available: matched Klein–Gordon comparison. The cursor follows the selected simulation time.':'The signed signal is sampled every 0.2 M. The polarity and field-off controls share the same vertical scale as the +B and 2B runs.';
     keys(...(o?['Phase','Separation','Common mass']:['Probe radius','Mode amplitude','Time window']));
     legend(o?[['Horizon A',amber],['Horizon B',blue],['Common horizon',ivory]]:[['Negative rφ',blue],['Zero','#566067'],['Positive rφ',amber]]);
+    }
     const [lo,hi]=limits();$('scrub').min=lo;$('scrub').max=hi;
     clocks[view]=Math.max(lo,Math.min(hi,clocks[view]));draw();
   }
@@ -150,8 +159,9 @@
     curve(primary,amber,[]);if(secondary)curve(secondary,blue,[4,6]);line(g,x(t),T,x(t),B,ivory);
   }
   function draw(){
-    const t=clocks[view];$('time').textContent=(t>0&&view==='orbit'?'+':'')+t.toFixed(1).replace('-','−');
-    $('scrub').value=t;$('scrub').setAttribute('aria-valuetext',t.toFixed(1)+' M');
+    const t=clocks[view];$('time').textContent=(t>0&&view==='orbit'?'+':'')+t.toFixed(view==='ns'?2:1).replace('-','−');
+    $('scrub').value=t;$('scrub').setAttribute('aria-valuetext',t.toFixed(view==='ns'?2:1)+(view==='ns'?' ms':' M'));
+    if(view==='ns'){ns.scene(t);ns.chart(t);return;}
     if(view==='orbit')orbitalScene(t);else fieldScene(t);
     signalChart(t);
   }
@@ -165,10 +175,15 @@
   $('play').onclick=()=>{if(playing){pause();return;}const [lo,hi]=limits();if(clocks[view]>=hi)clocks[view]=lo;
     playing=true;stamp=performance.now();$('play').textContent='Ⅱ Pause';$('play').setAttribute('aria-label','Pause simulation');animationId=requestAnimationFrame(tick);};
   function select(v){pause();view=v;settings();}
+  $('nsTab').onclick=()=>select('ns');
   $('orbTab').onclick=()=>select('orbit');$('fieldTab').onclick=()=>select('field');
   $('scrub').oninput=()=>{pause();clocks[view]=Number($('scrub').value);draw();};
-  $('jump').onclick=()=>{pause();clocks[view]=0;draw();};
-  for(const id of ['window','tails','arm','modeSel'])$(id).onchange=settings;
+  $('jump').onclick=()=>{pause();clocks[view]=view==='ns'?ns.midpoint:0;draw();};
+  for(const id of ['window','tails','arm','modeSel','nsScale','nsTrack'])$(id).onchange=settings;
   document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});window.addEventListener('resize',draw);
-  settings();
+  function openLinkedMode(){
+    if(location.hash==='#neutron-star')select('ns');else if(location.hash==='#scalar')select('field');
+  }
+  window.addEventListener('hashchange',openLinkedMode);
+  settings();openLinkedMode();
 })();

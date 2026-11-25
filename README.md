@@ -1,6 +1,6 @@
 # Black Hole Horizon
 
-[Open the black hole collision lab](https://enuminous.github.io/Black-Hole-Horizon/) to play the binary merger or explore EFMW scalar scattering. The repository's [index.html](index.html) includes the code and numerical data for both views and opens offline. [Collision methods and replay](collision/README.md).
+[Open the black hole collision lab](https://enuminous.github.io/Black-Hole-Horizon/) to play a binary black-hole merger, follow a [neutron star disrupted by a black hole](https://enuminous.github.io/Black-Hole-Horizon/#neutron-star), or explore EFMW scalar scattering. The repository's [index.html](index.html) includes the code and numerical data for all three views and opens offline. [Collision methods and replay](collision/README.md).
 
 The [horizon-area study](https://enuminous.github.io/Black-Hole-Horizon/area.html) reproduces the GW250114 area comparison, tests its robustness on synthetic data, and examines the conditional C1 entropy mapping. Open [area.html](area.html) for its offline explorer.
 

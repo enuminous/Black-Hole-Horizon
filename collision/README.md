@@ -1,6 +1,6 @@
 # Black hole collision lab
 
-[Open the lab](https://enuminous.github.io/Black-Hole-Horizon/) or open the repository’s standalone [index.html](../index.html) offline. The modular copy in this directory uses the CSS and JavaScript files beside it. Play, pause, scrub, change playback speed, or jump to the first common horizon. The two views have independent clocks.
+[Open the lab](https://enuminous.github.io/Black-Hole-Horizon/) or open the repository’s standalone [index.html](../index.html) offline. The modular copy in this directory uses the CSS and JavaScript files beside it. Play, pause, scrub, change playback speed, or jump to the first common horizon. Each of the three views has its own simulation clock.
 
 ## Binary collision
 
@@ -9,6 +9,15 @@ The orbital plane shows the x–y projection of inertial-frame apparent-horizon 
 Time zero corresponds to t=3691.89200847 in the original file. The earliest sample in AhC marks the first *recorded* common apparent horizon. The display preserves the brief overlap with AhA and AhB and interpolates only within each track's measured times. Circle radii represent 2 times the irreducible mass of each horizon. Their 2D appearance illustrates area-equivalent size in coordinate space. The simulation data provide no lensing image or shape contours for these circles.
 
 **Credit.** SXS Collaboration, *Binary black-hole simulation SXS:BBH:0305*, Zenodo release 13182440, CC BY 4.0. This lab selects and interpolates coordinate centers, irreducible masses, Christodoulou masses and spin magnitudes from Lev5:Horizons.h5. It shifts the time origin, subsamples, rounds and renders the records. Original source MD5 d1e13bc439f3bc71a912cce697783ba6; metadata MD5 0d573928205effecc3c13d576774c83e. [Dataset](https://doi.org/10.5281/zenodo.13182440) · [Field definitions](https://data.black-holes.org/waveforms/documentation.html) · [License](https://creativecommons.org/licenses/by/4.0/).
+
+## Neutron star + black hole
+
+[Open the tidal-disruption replay](https://enuminous.github.io/Black-Hole-Horizon/#neutron-star). The Einstein Toolkit gallery run follows a nonspinning 3.6 M☉ black hole and 1.4 M☉ neutron star, initially separated by 45 km, with a Γ=2 equation of state. Matur et al. chose parameters consistent with GW230529 and report that the simulated star disrupts and leaves a disc. The lab replays this published relativistic hydrodynamic simulation. Detector observations and an EFMW matter evolution are outside the scope of this view.
+
+- **Matter map.** All 50 equatorial rest-mass density outputs span 0–14.83 ms in the simulation frame, with roughly 0.30 ms between images. A single logarithmic scale covers 10⁸–10¹⁵ g/cm³. Each slice is sampled onto a 201 × 201 Cartesian grid across 120 km using the nearest active Carpet cell on the finest available refinement level at each pixel. This clips the color endpoints for display. Zooming crops the same numerical image. The player holds each slice until its successor, labels its saved time and applies no temporal morphing.
+- **Black hole.** The cross marks the PunctureTracker coordinate position at the displayed density iteration. QuasiLocalMeasures supplies the black-hole horizon mass, read from qlm_mass[1] (AHFinderDirect horizon 1, spherical surface 2). The plotted interval begins at 3.599 M☉ and ends at 4.741 M☉. The graph interpolates its own, finer mass time series. The jump locates the first crossing of the midpoint between the two endpoint masses. It is a playback landmark. Measuring ejecta or a disc mass requires further diagnostics beyond this projected slice.
+- **Source and attribution.** Rahime Matur, Beyhan Karakaş, Roland Haas, Ian Hawke, Nils Andersson and Steven R. Brandt released the simulation dataset under CC BY 4.0. The lab resamples the density slices, transforms the units, and extracts and synchronizes the puncture track and horizon mass. [Data, version 1](https://doi.org/10.5281/zenodo.18940220) · [Simulation paper](https://doi.org/10.1088/1402-4896/aea653) · [Einstein Toolkit setup](https://einsteintoolkit.org/gallery/bhns/index.html) · [License](https://creativecommons.org/licenses/by/4.0/).
+- **Replay.** Download the upstream archive `bhns_gw230529.tar.gz` from the DOI record. Run `python neutron_star.py /path/to/bhns_gw230529.tar.gz /tmp/bhns-input` in this directory with the repository requirements. Pillow is installed with Matplotlib. The converter verifies the published archive MD5, selects three named members and generates the offline indexed PNG atlas, synchronized readouts and [mass CSV](bhns-horizon-mass.csv). Run `python build_lab.py` from the repository root to refresh the standalone home page.
 
 ## Scalar scattering
 
