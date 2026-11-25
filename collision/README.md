@@ -1,6 +1,6 @@
 # Black hole collision lab
 
-[Open the lab](https://enuminous.github.io/Black-Hole-Horizon/collision/) or open index.html locally with the CSS and JavaScript files beside it. Play, pause, scrub, change playback speed, or jump to the first common horizon. The two views have independent clocks.
+[Open the lab](https://enuminous.github.io/Black-Hole-Horizon/) or open the repository’s standalone [index.html](../index.html) offline. The modular copy in this directory uses the CSS and JavaScript files beside it. Play, pause, scrub, change playback speed, or jump to the first common horizon. The two views have independent clocks.
 
 ## Binary collision
 

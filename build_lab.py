@@ -1,15 +1,46 @@
 """Build a dependency-free HTML lab and static scientific figure from executed outputs."""
 import json
+import re
 from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parent
+
+def collision_home(area_html):
+    folder = ROOT / 'collision'
+    html = (folder / 'index.html').read_text()
+    # Keep links to the evidence CSV, protocol and ZIP valid from the root.
+    html = html.replace('<head>', '<head><base href="./collision/">', 1)
+    old_ids = set(re.findall(r'\bid="([^"]+)"', area_html))
+    current_ids = set(re.findall(r'\bid="([^"]+)"', html))
+    anchors = json.dumps(sorted(old_ids - current_ids))
+    legacy_links = (
+        f'<script>function openAreaAnchor() {{if ({anchors}.includes(location.hash.slice(1))) {{'
+        "const area = new URL('area.html', location.href);"
+        "area.search = location.search; area.hash = location.hash;"
+        "location.replace(area.href);}}"
+        "addEventListener('hashchange',openAreaAnchor);openAreaAnchor();</script>"
+    )
+    html = html.replace('</head>', legacy_links + '</head>', 1)
+    css = (folder / 'lab.css').read_text()
+    html = html.replace('<link rel="stylesheet" href="lab.css">', f'<style>{css}</style>')
+    scripts = []
+    for name in ('orbits.js', 'fields.js', 'lab.js'):
+        tag = f'<script defer src="{name}"></script>'
+        if html.count(tag) != 1:
+            raise ValueError(f'Missing or duplicate player asset: {name}')
+        html = html.replace(tag, '')
+        scripts.append('<script>' + (folder / name).read_text() + '</script>')
+    return html.replace('</body>', ''.join(scripts) + '</body>')
+
 def main():
     data={k:json.loads((ROOT/'results'/f).read_text()) for k,f in [('observational','observational.json'),('synthetic','synthetic.json'),('examples','waveform_examples.json'),('gates','gates.json')]}
     raw=json.dumps(data,separators=(',',':')).replace('</','<\\/')
-    (ROOT/'index.html').write_text((ROOT/'lab.template.html').read_text().replace('__STUDY_DATA__',raw))
+    area_html = (ROOT/'lab.template.html').read_text().replace('__STUDY_DATA__',raw)
+    (ROOT/'area.html').write_text(area_html)
+    (ROOT/'index.html').write_text(collision_home(area_html))
     plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False,'svg.hashsalt':'EFMW-BH-AREA-003'})
     fig,axes=plt.subplots(1,3,figsize=(14,4),layout='constrained')
     o=data['observational'];q=np.asarray(o['ratio_quantiles']);p=np.linspace(0,1,len(q))
@@ -29,5 +60,5 @@ def main():
     from model import area,qnm
     golden=[{'m':m,'s':s,'area':float(area(m,s)),'qnm':[float(x) for x in qnm(m,s)]} for m,s in [(20,.05),(68,.68),(100,.95)]]
     (ROOT/'tests/physics-golden.json').write_text(json.dumps(golden,indent=2)+'\n')
-    print('Built standalone index.html and results/summary.svg')
+    print('Built standalone collision index.html, area.html and results/summary.svg')
 if __name__=='__main__':main()

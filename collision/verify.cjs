@@ -27,3 +27,11 @@ const result=JSON.parse(read('source-results.json'));
 assert(Object.values(result.checks).every(v=>v===true));
 new vm.Script(read('lab.js'));
 console.log('Verified SXS horizon coverage, all published traces, magnetic controls and browser script.');
+
+const home=read('../index.html'), area=read('../area.html');
+assert(home.includes('<h1>Black hole collision lab'));
+assert(home.includes('<base href="./collision/">') && home.includes('href="../area.html"'));
+for(const f of ['lab.js','fields.js','orbits.js']) assert(home.includes('<script>'+read(f)+'</script>'), f+' is missing or stale on the home page');
+assert(home.includes('<style>'+read('lab.css')+'</style>'));
+assert(!/<script[^>]+src=|<link[^>]+rel="stylesheet"/.test(home));
+assert(area.includes('href="index.html">Open the collision simulator') && area.includes('id="explorer"'));

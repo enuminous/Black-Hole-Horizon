@@ -154,7 +154,7 @@ The public result is a reproduction, not a novel detection. The mass degeneracy 
 
 ## 6. Reproduction and next tests
 
-See [README.md](README.md) for exact commands. The standalone [index.html](index.html) embeds all displayed results and runs without internet. It provides a noiseless explorer, a conditional posterior sweep, all 16 executed cases, recorded trial-0 waveforms, and JSON/CSV downloads. It does not rerun nonlinear inference in the browser.
+See [README.md](README.md) for exact commands. The standalone [area.html](area.html) embeds all displayed results and runs without internet. It provides a noiseless explorer, a conditional posterior sweep, all 16 executed cases, recorded trial-0 waveforms, and JSON/CSV downloads. It does not rerun nonlinear inference in the browser.
 
 The next three useful tests are:
 
