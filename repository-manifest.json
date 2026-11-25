@@ -3,9 +3,9 @@
   "files": [
     {
       "path": ".github/workflows/verify.yml",
-      "bytes": 802,
-      "sha256": "c3e7a866b24ea4fc0a582db119b87ff039cbc45fdebb05b184b920ae5955ebc8",
-      "git_blob_sha1": "d8be8c68c97037a9fce036ee4e0180aa0e483eca"
+      "bytes": 917,
+      "sha256": "4e37f9770ab4cb8de0e1d7c9e6001aaf977ba20104607977694e307f291a70d6",
+      "git_blob_sha1": "85f4519a2de88c0dc562e061bc0b147787861362"
     },
     {
       "path": ".gitignore",
@@ -27,9 +27,9 @@
     },
     {
       "path": "FINDINGS.md",
-      "bytes": 15958,
-      "sha256": "a7f140d16cff71349a3419b716df08be2941e25cc65fab8137ffe37a0077cc27",
-      "git_blob_sha1": "89b8953e41b225a6030cba8314c11bb2ca5ac46b"
+      "bytes": 15956,
+      "sha256": "8e3a86d8eca9a47c51dffb17f6e2515bb5b4fb58eba547a30952d5bcd77605e0",
+      "git_blob_sha1": "7832e45f0266e79214edcdd6e4ba26009166c224"
     },
     {
       "path": "LICENSE_NOTICE.md",
@@ -51,15 +51,105 @@
     },
     {
       "path": "README.md",
-      "bytes": 4794,
-      "sha256": "8324097f3593c3b76e53856dd8b3fccdc4d83b32548f423d842b43e9244f7149",
-      "git_blob_sha1": "c822e3055a278c04adf13984813ccf07099bb883"
+      "bytes": 4848,
+      "sha256": "4a36b3a57ee1ae50fff315ed469504c30495c09ccf5007a4fe833ccea9eda816",
+      "git_blob_sha1": "e4b79465f379d4fe1fb092a3fe4fbbcd864496ff"
+    },
+    {
+      "path": "area.html",
+      "bytes": 447795,
+      "sha256": "5380d90017044cb15266e7131d995eb5ab37707ab6248fb6e5ba2296d6823c7f",
+      "git_blob_sha1": "7e483567d8dcdee8041f77c5142eb8e801588bd1"
     },
     {
       "path": "build_lab.py",
-      "bytes": 2816,
-      "sha256": "8ff9f128eb19f0ea67a61b84d55fed7ec347bfc088272afdf40eaa10f3fe3ccc",
-      "git_blob_sha1": "ae1c6ff1f24658901451e6ac729337042263bd8a"
+      "bytes": 4359,
+      "sha256": "a4f92f0588a7e43c4bce4d48e4bec6f1b34a7385cd1f91ff74682ed8cd2043e9",
+      "git_blob_sha1": "4f552a58a3a6f10410ef22b56bd014be3c29fd82"
+    },
+    {
+      "path": "collision/BH-SCAT-001-Replay.zip",
+      "bytes": 649379,
+      "sha256": "4ccf2851ee6655ee0520068986e647c388b779d602c48cec1b8c32488681e71f",
+      "git_blob_sha1": "fe858444d95acc487f76fc91649fba5181c39837"
+    },
+    {
+      "path": "collision/README.md",
+      "bytes": 6747,
+      "sha256": "4c6452a19063febbab6e36ce7f933ad5e4eeb18aba8bf847a6b3f6636d375711",
+      "git_blob_sha1": "1bf23dbc6d9d7e6206a1ba836e57d362ca0bb4c3"
+    },
+    {
+      "path": "collision/SOURCE-PROTOCOL.md",
+      "bytes": 1900,
+      "sha256": "6ec06a97752c42f507be79625213a2946af97d5705db4a8d92ea18b180a1be69",
+      "git_blob_sha1": "6c2eaca47414abdcce8ace5cafcd3133451128e9"
+    },
+    {
+      "path": "collision/fields.js",
+      "bytes": 388524,
+      "sha256": "23100fbe508430c67e272b99ea6669c707c715e1596e4398931c268f0b5f1c67",
+      "git_blob_sha1": "42e3a791d3b58f5e9dcb74ffda2fdb7b7e472d2c"
+    },
+    {
+      "path": "collision/index.html",
+      "bytes": 4392,
+      "sha256": "c9819e2bf3312c42f874d2011bc41093be3655b02417f57184c38695f67ea27b",
+      "git_blob_sha1": "57da11ca57ff47be985b58d8de1f5d31e190504c"
+    },
+    {
+      "path": "collision/lab.css",
+      "bytes": 5462,
+      "sha256": "7651107598319c57b48bd3d9aa2d61a47e7c97d648220b6474f8c53d12223680",
+      "git_blob_sha1": "83013ba25afa16844b7d8ee121758a663786715e"
+    },
+    {
+      "path": "collision/lab.js",
+      "bytes": 12696,
+      "sha256": "f8764752c14cf40fc86e224f78c28f772b129e2ae417c2f07dcc2bd9d9b196b1",
+      "git_blob_sha1": "31a4ddd9b3473f4a16527c1b305e7238c88c2082"
+    },
+    {
+      "path": "collision/orbits.js",
+      "bytes": 475296,
+      "sha256": "f7ec34816829137d63ed61600b14218dcfa0e2a199d6315b958632acbc5ea42c",
+      "git_blob_sha1": "783c935853d9456e91bc831165f8254efb01b047"
+    },
+    {
+      "path": "collision/orbits.py",
+      "bytes": 2387,
+      "sha256": "eb393cfde8c303801c9ff5831a625f0edb7adff1acc2393b93a58bc0dfd7adfb",
+      "git_blob_sha1": "0680216b490ad0821f220bc187c401c71b11480a"
+    },
+    {
+      "path": "collision/scatter.py",
+      "bytes": 7028,
+      "sha256": "ff65695a8c6094697a2e064fb000f49c74c06bb5d498b33e2ff6174059cfabc3",
+      "git_blob_sha1": "6cab97199654dc640b4d5b4502ed21efbe416a1e"
+    },
+    {
+      "path": "collision/signals.csv",
+      "bytes": 60035,
+      "sha256": "9c5d12477691bc71d02931e6517a67facc20e86ed8ac28c86d68ce152632e46e",
+      "git_blob_sha1": "f2bd5d8d837938fae1fe7d78e581e2151dd18f39"
+    },
+    {
+      "path": "collision/simulate.py",
+      "bytes": 5824,
+      "sha256": "ce864415cb038c809791f3f49305b58a5311a9d5d2f9a328b17ffff4d6286bce",
+      "git_blob_sha1": "38c8987fc38d34643b9eefcf184c28f4e39aad5b"
+    },
+    {
+      "path": "collision/source-results.json",
+      "bytes": 1002,
+      "sha256": "9aaf8658566c1ca9d88908013bb419c08329522809634e432d5f818946ab0ec9",
+      "git_blob_sha1": "50fde8a686e4802f8fdfc841703b32c8d34a5917"
+    },
+    {
+      "path": "collision/verify.cjs",
+      "bytes": 2304,
+      "sha256": "86bd529fef6153a6f7ca17b2db5b90a3aa50176d4922072aa16ed2b29a2d1734",
+      "git_blob_sha1": "76e2f5721512e84d8251668c6ac6b4ea32732253"
     },
     {
       "path": "data/area_inputs.npz",
@@ -75,15 +165,15 @@
     },
     {
       "path": "index.html",
-      "bytes": 447738,
-      "sha256": "8084d6c6488764b74a034bfe49a41fe11c228d320430d12b824ac9ea4cda9e87",
-      "git_blob_sha1": "cfb8e2c27707e112bf8d72abacadfdf8a1d9e08a"
+      "bytes": 887037,
+      "sha256": "18b4095cc55a84d32e9a1a83b58f6eb09c9bd46ecc00add576543f9b40d969cd",
+      "git_blob_sha1": "d568414be66899a31fbe25da55d696c19a06ac27"
     },
     {
       "path": "lab.template.html",
-      "bytes": 20501,
-      "sha256": "3a4b4d92f65064a91bf59b178d87f073b8a9957ac47e81049839f2bca774de80",
-      "git_blob_sha1": "11a4445dde3c88e5ab80bb7d3ef65ba196c5b1a0"
+      "bytes": 20558,
+      "sha256": "df7fe4aa87f5010d9edaf288455d92ccaffaadc17ec83af1fb0bf40ef2c544a2",
+      "git_blob_sha1": "74aa187894c767a258fab4c0786ec06cc2e5bcd6"
     },
     {
       "path": "model.py",
@@ -231,9 +321,9 @@
     },
     {
       "path": "tests/check_lab.cjs",
-      "bytes": 1142,
-      "sha256": "c249f9ff32571ea54be6f853b10010e8ff0b43b9adffcaa671955c1c33ad936c",
-      "git_blob_sha1": "c5fbe1b9112499c2dfa66f698e1b5cb725a0fde9"
+      "bytes": 1141,
+      "sha256": "b5017f776fa0403309a32d7eaf9ec303e48dd0481bd12e98a5ec62c6a98bf2bf",
+      "git_blob_sha1": "cfd3d8d5a3a21a1e27a6ad587c73f06232195f32"
     },
     {
       "path": "tests/physics-golden.json",

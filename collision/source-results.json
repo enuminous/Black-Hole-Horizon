@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "l0": true,
+    "l2": true,
+    "l4": true,
+    "pulse_zero_0": true,
+    "pulse_zero_2": true,
+    "pulse_plus_0": true,
+    "pulse_plus_2": true,
+    "pulse_minus_0": true,
+    "pulse_minus_2": true
+  },
+  "diagnostics": {
+    "l0": {
+      "field_reversal": 0.0,
+      "doubling": 0.0,
+      "zero": 0.0,
+      "last_refinement": 9.085415616674657e-06,
+      "convergence_order": 2.003093319529071,
+      "peak": 0.0016488553883608984
+    },
+    "l2": {
+      "field_reversal": 0.0,
+      "doubling": 0.0,
+      "zero": 0.0,
+      "last_refinement": 8.706561827081125e-05,
+      "convergence_order": 2.003757513421414,
+      "peak": 0.00016101437330545877
+    },
+    "l4": {
+      "field_reversal": 0.0,
+      "doubling": 0.0,
+      "zero": 0.0,
+      "last_refinement": 0.0002122004935662146,
+      "convergence_order": 1.9983319820470022,
+      "peak": 1.8653895452969026e-08
+    }
+  },
+  "protocol_sha256": "6ec06a97752c42f507be79625213a2946af97d5705db4a8d92ea18b180a1be69"
+}

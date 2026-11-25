@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),path=require('path');
-const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'area.html'),'utf8');
 const core=html.match(/<script id="physics-core">([\s\S]*?)<\/script>/)[1];
 const context={module:{exports:{}}};vm.runInNewContext(core,context);
 const golden=JSON.parse(fs.readFileSync(path.join(__dirname,'physics-golden.json')));

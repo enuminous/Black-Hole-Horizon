@@ -1,8 +1,8 @@
 # Black Hole Horizon
 
-**EFMW-BH-AREA-003 — public-data reproduction, synthetic robustness tests and a conditional C1 entropy map.**
+[Open the black hole collision lab](https://enuminous.github.io/Black-Hole-Horizon/) to play the binary merger or explore EFMW scalar scattering. The repository's [index.html](index.html) includes the code and numerical data for both views and opens offline. [Collision methods and replay](collision/README.md).
 
-Open **[index.html](index.html)** locally in a browser for the standalone interactive lab. Download the repository ZIP, extract it and double-click that file. All charts, controls and embedded results work offline. The documentation links resolve when the repository files remain together.
+The [horizon-area study](https://enuminous.github.io/Black-Hole-Horizon/area.html) reproduces the GW250114 area comparison, tests its robustness on synthetic data, and examines the conditional C1 entropy mapping. Open [area.html](area.html) for its offline explorer.
 
 ## Findings
 
@@ -65,12 +65,12 @@ The archive is approximately 114 MB. The downloader checks the pinned MD5, recor
 - `results/observational.json`: reference reproduction, all premerger cuts, ringdown scans and mapping sensitivity.
 - `results/synthetic.json`: all 16 cases and Wilson 95% rate intervals.
 - `results/waveform_examples.json`: trial 0 of each case; no selection by appearance.
-- `lab.template.html`, `build_lab.py`: source and deterministic assembly of the standalone lab.
+- `lab.template.html`, `build_lab.py`: source and deterministic assembly of the two standalone pages.
 - `tests/`: numerical identities, noiseless recovery, and Python/JavaScript cross-checks.
 
 ## Publication and scope
 
-Published source destination: [enuminous/Black-Hole-Horizon](https://github.com/enuminous/Black-Hole-Horizon). Repository publication does not itself activate GitHub Pages. The lab can be served by any static host, or opened directly from disk. To use GitHub Pages, select the `main` branch and repository root in the repository's Pages settings.
+The [area study](https://enuminous.github.io/Black-Hole-Horizon/area.html) and [collision simulator](https://enuminous.github.io/Black-Hole-Horizon/) run on GitHub Pages and work from an extracted repository download.
 
 This is a bounded completed methods study, not a complete test of EFMW as a physical theory. No fresh detector search, general area-theorem proof, numerical-relativity merger, full Zoo audit or Lean verification is reported. Prepared for Matthew Chenoweth Wright / Monolithic LLC with AI assistance, 31 October 2026.
 
