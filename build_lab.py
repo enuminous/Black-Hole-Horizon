@@ -27,7 +27,7 @@ def collision_home(area_html):
     css = (folder / 'lab.css').read_text()
     html = html.replace('<link rel="stylesheet" href="lab.css">', f'<style>{css}</style>')
     scripts = []
-    for name in ('orbits.js', 'fields.js', 'lab.js'):
+    for name in ('orbits.js', 'fields.js', 'bhns-data.js', 'bhns.js', 'lab.js'):
         tag = f'<script defer src="{name}"></script>'
         if html.count(tag) != 1:
             raise ValueError(f'Missing or duplicate player asset: {name}')
