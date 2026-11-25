@@ -4,6 +4,8 @@
 
 Open **[index.html](index.html)** locally in a browser for the standalone interactive lab. Download the repository ZIP, extract it and double-click that file. All charts, controls and embedded results work offline. The documentation links resolve when the repository files remain together.
 
+**[Open the black hole collision lab](https://enuminous.github.io/Black-Hole-Horizon/collision/)** to follow a numerical binary through common-horizon formation and explore the separate EFMW scalar scattering experiment. Use [collision/index.html](collision/index.html) offline. [Simulation methods, source data and replay](collision/README.md).
+
 ## Findings
 
 - Reproduced GW250114's reference Gaussian area statistic: **4.4472**, rounding to the published **4.4σ**.
@@ -70,7 +72,7 @@ The archive is approximately 114 MB. The downloader checks the pinned MD5, recor
 
 ## Publication and scope
 
-Published source destination: [enuminous/Black-Hole-Horizon](https://github.com/enuminous/Black-Hole-Horizon). Repository publication does not itself activate GitHub Pages. The lab can be served by any static host, or opened directly from disk. To use GitHub Pages, select the `main` branch and repository root in the repository's Pages settings.
+The [area study](https://enuminous.github.io/Black-Hole-Horizon/) and [collision simulator](https://enuminous.github.io/Black-Hole-Horizon/collision/) run on GitHub Pages and work from an extracted repository download.
 
 This is a bounded completed methods study, not a complete test of EFMW as a physical theory. No fresh detector search, general area-theorem proof, numerical-relativity merger, full Zoo audit or Lean verification is reported. Prepared for Matthew Chenoweth Wright / Monolithic LLC with AI assistance, 31 October 2026.
 
